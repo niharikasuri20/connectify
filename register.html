@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/logo.png" type="image/icon type">
+    <title>Connectify | Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        h1{
+            text-align: center;
+            
+        }
+        /* h2{
+            font-size: 20px;
+        } */
+        /* .PI,h2, .login, .interests{
+            margin:10px;
+        }
+        .bio,.suggestions{
+            width:50%;
+            height:100px;
+        }
+        .box{
+            position: relative;
+            margin-top: 20px;
+        }  */
+        .selections{
+          display:grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-gap:20px
+        }
+    </style>
+</head>
+<body >
+    
+    <header class="text-gray-600 body-font" style="background-color: #142c4c;">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="/index.html">
+            <img src="/logo.png" width="100">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a href="/aboutus.html" class="mr-5 hover:text-gray-900" style="color: white;">About Us</a>
+            <a href="/chatrooms_info.html"class="mr-5 hover:text-gray-900" style="color:white;">Chatrooms Info</a>
+            <a href="/SOS.html"class="mr-5 hover:text-gray-900" style="color:white;">SOS</a>
+            <a href="/feedback.html"class="mr-5 hover:text-gray-900" style="color:white;">Feedback</a>
+          </nav>
+        </div>
+      </header>
+      
+      <div class="container" style="background-color: white; padding: 5px 20px 15px 20px; border: 1px solid black; border-radius:4px; margin: 2% 0 ">
+        <div class="text-center mb-20">
+          <br><br>
+          <h1 class="sm:text-3xl text-2xl font-medium title-font text-white mb-4"style="color:#142c4c">SIGN UP NOW!</h1>
+          <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-400 text-opacity-80">Already have an account?<a href="index.html"><u>Login</u></a></p>
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex" style="background-color:#142c4c"></div>
+          </div>
+        </div>
+      <!-- <h1 style="font-size:xx-large; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Sign Up Now!</h1> -->
+      <hr>
+    <form action="#" style="margin:10px;color: #142c4c;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-align: left;" >
+      <div class="PI" style="font-size:17px">
+        <h2 style="font-size:25px"> Personal Information:</h2>
+        <p> First Name:<input type="text"class="details" style="margin:10px; width:40%; padding:12px; border:1px solid black; border-radius:5px">Last Name:<input type="text" class="details" style="margin:10px;width:40%;padding:12px;border:1px solid black; border-radius:5px">   </p>
+        <p> Date of Birth:<input type="date"class="details" style="margin:10px; width:40%; padding:12px; border:1px solid black; border-radius:5px" > </p>
+        <p> Gender: <input type="radio" class="details" name="Gender" value="M"style="margin:10px">Male<input type="radio" class="details" name="Gender" value="F"style="margin:10px">Female<input type="radio" class="details" name="Gender" value="O"style="margin:10px">Other<input type="radio" class="details" name="Gender" value="P"style="margin:10px">Prefer not to say</p>
+        <p> Email ID: <input type="email"class="details" style="margin:10px; width:40%; padding:12px; border:1px solid black; border-radius:5px" ></p>
+    </div>
+    <hr>
+    <h2 style="font-size:25px">Login Details:</h2>
+    <div class="login" style="font-size:17px">
+    <p>Choose a password: <input type="password"style="margin:10px; width:35%; padding:12px; border:1px solid black; border-radius:5px">
+    Confirm password: <input type="password"style="margin:10px; width:35%; padding:12px; border:1px solid black;border-radius:5px"> </p>
+    <p>Add a bio: <textarea style="margin:10px; width:100%; padding:12px; border:1px solid black; border-radius:5px"></textarea> </p>
+    <p> Add a profile picture: <input id="image" type="file" name="profile_photo" placeholder="Photo"></p>
+</div> <br>
+<hr>
+        <h2 style="font-size:25px">Tell us what you love!</h2>
+        <div class="interests" style="font-size:17px"></div> <br>
+        <p>We've a wide range of chatrooms. Based on your choices, we'll connect you with people of mutual interests.</p><br><p> Please select from the following:</p><br>
+        <div class="selections">
+          <p>Travel<input type="checkbox" class="details" name="interests" value="T"></p>
+          <p>Football<input type="checkbox" class="details" name="interests" value="F"></p>
+          <p>Reading<input type="checkbox" class="details" name="interests" value="R"></p>
+          <p>Photography<input type="checkbox" class="details" name="interests" value="P"></p>
+          <p>Gaming<input type="checkbox" class="details" name="interests" value="G"></p>
+          <p>Cooking<input type="checkbox" class="details" name="interests" value="C"></p>
+          <p>Design<input type="checkbox" class="details" name="interests" value="D"></p>
+          <p>Web Development<input type="checkbox" class="details" name="interests" value="WD"></p>
+          <p>AI<input type="checkbox" class="details" name="interests" value="AI"></p>
+          <p>Data Science<input type="checkbox" class="details" name="interests" value="DS"></p>
+          <p>Poetry<input type="checkbox" class="details" name="interests" value="Po"></p>
+          <p>Public Speaking<input type="checkbox" class="details" name="interests" value="PS"></p></div>
+        <br>
+        <p>Didn't find anything? Let us know and we'll get it for you :)<br><textarea style="margin:10px; width:100%; padding:12px; border:1px solid black; border-radius:5px"></textarea>
+        <input type="submit" value="Create Account" style="background-color:#142c4c; color:white; margin:10px; padding: 12px 20px; border:none; border-radius:4px"> </p>
+        
+    </div>
+</div>
+    </form>
+</body>
+</html>
