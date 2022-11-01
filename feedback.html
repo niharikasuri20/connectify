@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=], initial-scale=1.0">
+  <meta name="viewport" content="width=1, initial-scale=1.0">
   <title>Connectify | Feedback</title>
   <link rel="icon" href="/logo.png" type="image/icon type">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -32,7 +32,7 @@
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Contact Us</h1>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Have a concern or feedback to offer? Do let us know.</p>
       </div>
-      <form onsubmit="sendEmail(); reset();return false;">
+      <form onsubmit="event.preventDefault(); sendEmail();">
         <div class="lg:w-1/2 md:w-2/3 mx-auto">
           <div class="flex flex-wrap -m-2">
             <div class="p-2 w-1/2">
