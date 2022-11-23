@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connectify | Chatroom_Photography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body style="background-color:#02131b">
+    <header class="text-gray-600 body-font" style="background-color: #142c4c">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="./index.html">
+                <img src="./logo.png" width="100">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+            </a>
+            <nav
+                class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+                <a href="./Chat_homepage.html" class="mr-5 hover:text-gray-900" style="color:white;">Chat Now</a>
+                <a href="./chatrooms_info.html" class="mr-5 hover:text-gray-900" style="color:white;">Chatrooms Info</a>
+                <a href="./SOS.html" class="mr-5 hover:text-gray-900" style="color:white;">SOS</a>
+                <a href="./feedback.html" class="mr-5 hover:text-gray-900" style="color:white;">Feedback</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container" style=" padding: 5px 20px 15px 20px; border: 1px solid black; border-radius:4px; margin: 0 ">
+        <div class="text-center ">
+            <br>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-white mb-4" style="color:aliceblue">PHOTOGRAPHY
+            </h1>
+            <img src="/frontend/chatroom/photography_chat.png" style="display: block;
+    margin-top:auto;
+    margin-left: auto;
+    margin-right: auto;
+    width:30%"><br>
+            <p style="text-align:center;color:aliceblue">Photography is the art of capturing moments. <br>With the right
+                equipment, you can even photograph wavelengths of<br> light invisible to the human eye, including UV,
+                infrared, and radio. <br>Isn't that intriguing?</p>
+
+        </div>
+    </div>
+    <section class="flex flex-col items-center justify-center w-screen min-h-screen bg-gray-100 text-gray-800 p-10"
+        style="background-color:#02131b">
+        <div class="flex flex-col flex-grow w-full bg-white shadow-xl rounded-lg overflow-y:scroll"
+            style="background-color:#d7e6f8;border:solid 4px;border-color:aliceblue;overflow-y:scroll;width:100%">
+            <span
+                style="color:rgb(48, 97, 141);text-align:center;margin:10px;background-color: rgba(245, 245, 245, 0.813);"><b>PHOTOGRAPHY</b></span>
+            <main style="color:aliceblue">
+                <header>
+                    <div class="user-count" style="text-align:right;margin:10px;color:#02131b">In Chat: 0</div>
+                </header>
+                <section class="chat" style="color:#02131b;">
+                    <p style="text-align:center;color:#02131b">What do you think about photography?</p>
+
+                </section>
+        </div>
+        </main>
+        <form style="display:block;margin:auto;text-align:center;width:100%;border:2px">
+            <input type="text" placeholder="Type your message here"
+                style="width:100%;border:solid 4px;border-color:grey;border-radius:5px;color:black;">
+            <button
+                style="border:solid 4px;border-radius:5px;background-color: aliceblue;  border-color: grey;">Send</button>
+        </form>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://unpkg.com/cookie_js@1.2.2/cookie.min.js"></script>
+        <script src="https://unpkg.com/socket.io-client@2/dist/socket.io.slim.js"></script>
+        <script src="/public/javascript.js" type="application/javascript"></script>
+    </section>
+</body>
+
+</html>
